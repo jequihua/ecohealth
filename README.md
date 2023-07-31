@@ -15,14 +15,10 @@ Uses a subset of the column names of the data table in order to initialize the n
 
 A BN also requires a set of arcs in order to be fully specified, this can be done using an adjacency matrix, which is provided in the example data.
 
-### 3.- Fit bayesian network (fit_bn.R)
+### 3.- Fit BN (ecohealth.py)
 
-Once the adjacency matrix is devised it's time to fit the model.
+The BN must now be fitted on the data from which there is evidence of some level of ecosystem health. Currenly can only be performed using the Expectation Maximization algorithm.
 
-The same folders mentioned in 1.- must be associated to the bayesian network model. In this script, all the rasters are loaded into a raster brick, and then converted into a data frame where each raster becomes a column.
+### 4.- Predict ecosystem health over the region of interest (ecohealth.py)
 
-The network is fit using this data frame.
-
-### 4.- Predict IE over the region of interest (predict_with_bn.R)
-
-Once the model fit is complete, the model can use the full data frame to produce an IE map of the region.
+Once the model fit is complete, the model can use the full data frame to produce an ecosystem health map of the region.
