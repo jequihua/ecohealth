@@ -1,6 +1,8 @@
 # ecohealth
 Prediction of and inference on ecosystem health with probabilistic graphical models.
 
+Some <a href="https://docs.google.com/presentation/d/1gzYfG5ZDWlkupcootl1t8IuwtUxJ9xcxKVuhzzAaPwE/edit?usp=sharing">notes</a> on this whole ordeal. 
+
 The general workflow is all contained in the EcoNet() class and is as follows (a complete example is provided):
 
 ### 1.- Create an appropriate data table (preprocess_rasters.py)
